@@ -16,7 +16,7 @@ public class ZakharchenkoHW10_p1 extends BaseTest {
         };
     }
 
-    @Test(dataProvider = "dataProviderFrames", invocationCount = 3)
+    @Test(dataProvider = "dataProviderFrames")
     public void switchToFrame(String mainFrame, String subFrame, String expectedText) {
         driver.get(FRAME_URL);
         if (mainFrame == "") {
