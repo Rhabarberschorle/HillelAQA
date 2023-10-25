@@ -18,7 +18,7 @@ public class ZakharchenkoHW10_p1 extends BaseTest {
 
     @Test(dataProvider = "dataProviderFrames")
     public void switchToFrame(String mainFrame, String subFrame, String expectedText) {
-        driver.get(FRAME_URL);
+        driver.get("https://www.google.com/?hl=en-US");
         if (mainFrame == "") {
             driver.switchTo().frame(subFrame);
         } else {
